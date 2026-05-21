@@ -1,0 +1,23 @@
+.card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 16px;
+    border: 1px solid #e0e0e0;
+    border-radius: 6px;
+    transition: background 0.15s;
+}
+
+.card:hover {
+    background: #f5f5f5;
+}
+
+.card h3 {
+    font-size: 1rem;
+    font-weight: normal;
+}
+
+.arrow {
+    color: #ccc;
+    font-size: 1.1rem;
+}

@@ -1,21 +1,41 @@
 .page {
-  --background: #fafafa;
-  --foreground: #fff;
+    max-width: 700px;
+    margin: 40px auto;
+    padding: 0 16px;
+}
 
-  --text-primary: #000;
-  --text-secondary: #666;
+.page h1 {
+    font-size: 1.8rem;
+    margin-bottom: 8px;
+}
 
-  --button-primary-hover: #383838;
-  --button-secondary-hover: #f2f2f2;
-  --button-secondary-border: #ebebeb;
+.page h2 {
+    font-size: 1.1rem;
+    color: #888;
+    margin-bottom: 20px;
+    font-weight: normal;
+}
 
-  display: flex;
-  flex: 1;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-family: var(--font-geist-sans);
-  background-color: var(--background);
+.grid {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.status {
+    color: #888;
+    margin-top: 16px;
+}
+
+.favouritesLink {
+    display: inline-block;
+    margin-bottom: 20px;
+    font-size: 0.9rem;
+    color: #888;
+}
+
+.favouritesLink:hover {
+    color: inherit;
 }
 
 .main {

@@ -1,6 +1,9 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import { FilmProvider } from "@/context/FilmContext";
+import Link from "next/link";
+import styles from "./layout.module.css";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -24,7 +27,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`${geistSans.variable} ${geistMono.variable}`}>
-      <body>{children}</body>
+      <body>
+        <nav className={styles.navbar}>
+          <Link href="/" className={styles.brand}>Home</Link>
+          <Link href="/favourites">Carrito</Link>
+        </nav>
+        <FilmProvider>{children}</FilmProvider>
+      </body>
     </html>
   );
 }
