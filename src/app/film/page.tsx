@@ -55,12 +55,15 @@ export default function SearchPage (){
             />
             {loading && <p>Cargando...</p>}
             {error && <p>{error}</p>}
-            {!loading && !error && Film && (
-                <Link href={`/film/${Film[0].episode_id}`}>
+            {/* busqueda.trim hace que no se ejecute si el input esta vacio o solo tiene espacios, para evitar mostrar todas las peliculas */}
+            {!loading && !error && busqueda.trim() && Film && (
+                <ul>
                     {Film.map((film) => (
-                        <li key={film.episode_id}>{film.title}</li>
+                        <li key={film.episode_id}>
+                            <Link href={`/film/${film.episode_id}`}>{film.title}</Link>
+                        </li>
                     ))}
-                </Link>
+                </ul>
             )}
         </div>
     )
