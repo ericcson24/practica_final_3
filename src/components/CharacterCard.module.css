@@ -1,0 +1,37 @@
+.card {
+    padding: 14px 18px;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    background: #fafafa;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.card h4 {
+    margin: 0 0 6px 0;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.info {
+    font-size: 0.85rem;
+    color: #666;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 16px;
+    margin-top: 16px;
+}
+
+.section {
+    margin-top: 32px;
+}
+
+.section h3 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 0;
+}

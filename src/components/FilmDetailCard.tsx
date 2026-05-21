@@ -2,6 +2,7 @@
 import { useFilmContext } from "@/context/FilmContext"
 import { Film, FilmItem } from "@/lib/types"
 import styles from "./FilmDetailCard.module.css"
+import CharacterCard from "./CharacterCard"
 
 type FilmProps = {
     Film:Film
@@ -29,6 +30,8 @@ export default function FilmDetailCard({Film}:FilmProps) {
             <h2>{Film.title}</h2>
             <p className={styles.episode}>Episodio {Film.episode_id}</p>
             <p className={styles.crawl}>{Film.opening_crawl}</p>
+            
+            
 
             <div className={styles.controls}>
                 <p>En carrito: {cantidad}</p>

@@ -25,3 +25,13 @@ export async function GetFilmByID(id:string) {
         throw error
     }
 }
+
+export async function getCharacterByURL(url:string){
+    try{
+        const response = await axios.get(url)
+        return response.data
+    }catch(error){
+        console.error("Error al coger personaje por URL")
+        throw error
+    }
+}
