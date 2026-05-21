@@ -31,6 +31,7 @@ export default function RootLayout({
         <nav className={styles.navbar}>
           <Link href="/" className={styles.brand}>Home</Link>
           <Link href="/favourites">Carrito</Link>
+          <Link href="/film">Buscar</Link>
         </nav>
         <FilmProvider>{children}</FilmProvider>
       </body>
