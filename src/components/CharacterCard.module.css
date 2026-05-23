@@ -1,3 +1,9 @@
+.cardWrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
 .card {
     padding: 14px 18px;
     border: 1px solid #e0e0e0;
@@ -34,4 +40,24 @@
     font-size: 1.1rem;
     font-weight: 600;
     margin-bottom: 0;
+}
+
+.favBtn {
+    align-self: flex-start;
+    padding: 4px 10px;
+    font-size: 0.8rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background: none;
+    cursor: pointer;
+}
+
+.favBtn:hover {
+    background: #f0f0f0;
+}
+
+.favActive {
+    border-color: #f0c040;
+    color: #b8860b;
+    background: #fffbea;
 }

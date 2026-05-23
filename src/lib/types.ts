@@ -18,5 +18,7 @@ export type Character= {
     mass:string
     gender:string
     birth_year:string
+    films:string[]
+    url:string
 
 }

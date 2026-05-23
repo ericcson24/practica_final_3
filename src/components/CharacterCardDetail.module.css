@@ -1,0 +1,58 @@
+.card {
+    padding: 24px;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    background: #fafafa;
+    margin-bottom: 32px;
+}
+
+.card h2 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.stats {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+    gap: 16px;
+}
+
+.stat {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.label {
+    font-size: 0.72rem;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: #888;
+}
+
+.value {
+    font-size: 0.95rem;
+    color: #222;
+    font-weight: 500;
+}
+
+.favBtn {
+    margin-top: 24px;
+    padding: 8px 18px;
+    font-size: 0.9rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    background: none;
+    cursor: pointer;
+}
+
+.favBtn:hover {
+    background: #f0f0f0;
+}
+
+.favActive {
+    border-color: #f0c040;
+    color: #b8860b;
+    background: #fffbea;
+}

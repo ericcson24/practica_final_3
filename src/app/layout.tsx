@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { FilmProvider } from "@/context/FilmContext";
+import { CharacterProvider } from "@/context/CharacterContext";
 import Link from "next/link";
 import styles from "./layout.module.css";
 
@@ -33,8 +34,11 @@ export default function RootLayout({
           <Link href="/favourites">Carrito</Link>
           <Link href="/film">Buscar Peliculas</Link>
           <Link href="/characters">Personajes</Link>
+          <Link href="/favorites">Favoritos</Link>
         </nav>
-        <FilmProvider>{children}</FilmProvider>
+        <FilmProvider>
+          <CharacterProvider>{children}</CharacterProvider>
+        </FilmProvider>
       </body>
     </html>
   );

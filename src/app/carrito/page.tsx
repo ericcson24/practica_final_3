@@ -8,7 +8,7 @@ export default function FavouritesPage() {
     if (FilmCardList.length === 0) {
         return (
             <div>
-                <h1>Favoritos</h1>
+                <h1>Carrito</h1>
                 <p>No tienes películas en carrito.</p>
                 <Link href="/">Volver al inicio</Link>
             </div>
