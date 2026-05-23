@@ -36,3 +36,16 @@ export async function getCharacterByURL(url:string){
         throw error
     }
 }
+
+//https://swapi.info/api/people
+
+export async function GetCharacters() {
+    try{
+        const response = await axios.get ("https://swapi.info/api/people")
+        return response.data
+    }catch(error){
+        console.error("Error al coger datos de la api")
+        throw error
+    }
+    
+}

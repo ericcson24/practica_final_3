@@ -48,7 +48,7 @@ export default function FilmPage(){
 
     return(
         <div className={styles.page}>
-            <Link href="/" className={styles.back}>← Volver al inicio</Link>
+            <Link href="/" className={styles.back}>Volver al inicio</Link>
             {loading && <p className={styles.status}>Cargando...</p>}
             {error && <p className={styles.status}>{error}</p>}
             {!loading && !error && Film && (
